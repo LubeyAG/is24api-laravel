@@ -20,7 +20,7 @@ class IS24API
 
 	public function reset()
 	{
-		$this->is24api =  Immocaster_Sdk::getInstance('is24','ley','secret');
+		$this->is24api =  \Immocaster_Sdk::getInstance('is24','ley','secret');
 	}
 
 	public static function changeFormat($format)
