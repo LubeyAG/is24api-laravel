@@ -1,0 +1,35 @@
+{
+  "name": "pits/is24api-laravel",
+  "description": "immobilienscout24 api support for laravel 5",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "keywords": [
+	"laravel",
+	"immobilienscout"
+  ],
+  "authors": [
+	{
+	  "name": "upsite",
+	  "email": "upsite@gmx.net"
+	}
+  ],
+  "require": {
+	"illuminate/support": "5.5.*",
+	"immocaster/php-sdk": "^1.1"
+  },
+  "autoload": {
+	"psr-4": {
+	  "Pits\\IS24API\\": "src/"
+	}
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "Pits\\IS24API\\ServiceProvider"
+          ],
+          "aliases": {
+              "IS24API": "Pits\\IS24API\\Facades\\IS24API"
+          }
+      }
+  }
+}
