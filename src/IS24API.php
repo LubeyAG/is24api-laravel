@@ -10,15 +10,15 @@ class IS24API
 	protected $app;
 	protected $is24api;
 
-    public function __construct($app,$key,$secret)
+    public function __construct($app)
     {
         $this->app = $app;
-        $this->start($key,$secret);
+        $this->start();
     }
 
-    public function start($key,$secret)
+    public function start()
     {
-        $this->is24api =  \Immocaster_Sdk::getInstance('is24',$key,$secret);
+        $this->is24api =  \Immocaster_Sdk::getInstance('is24',env('IS24API_KEY', '06846297'),env('IS24API_SECRET', 'x11QwA0qgSQYgVBE'));
     }
 
 	public static function changeFormat($format)
