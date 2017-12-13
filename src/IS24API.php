@@ -28,7 +28,7 @@ class IS24API
             env('DB_PASSWORD'),
             env('DB_DATABASE')
         );
-        $$this->is24api->setDataStorage($aDatabase);
+        $this->is24api->setDataStorage($aDatabase);
     }
 
 	public static function changeFormat($format)
