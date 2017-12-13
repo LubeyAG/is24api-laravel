@@ -18,7 +18,9 @@ class IS24API
 
     public function start()
     {
-        $this->is24api =  \Immocaster_Sdk::getInstance('is24',env('IS24API_KEY', '06846297'),env('IS24API_SECRET', 'x11QwA0qgSQYgVBE'));
+        $this->is24api =  \Immocaster_Sdk::getInstance('is24',env('IS24API_KEY', 'add IS24API_KEY to env'),env('IS24API_SECRET', 'add IS24API_SECRET to env'));
+        if(env('IS24API_LIVE',false)===true)
+            $this->is24api->setRequestUrl('live');
     }
 
 	public static function changeFormat($format)
