@@ -19,6 +19,7 @@ class IS24API
     public function start()
     {
         $this->is24api =  \Immocaster_Sdk::getInstance('is24',env('IS24API_KEY', 'add IS24API_KEY to env'),env('IS24API_SECRET', 'add IS24API_SECRET to env'));
+        $this->is24api->useHttps(true);
         if(env('IS24API_LIVE',false)===true)
             $this->is24api->setRequestUrl('live');
         $aDatabase = array(
