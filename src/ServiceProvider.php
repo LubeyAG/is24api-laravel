@@ -1,6 +1,6 @@
 <?php
 
-namespace Pits\IS24API;
+namespace LubeyAG\IS24API;
 
 use Config;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 /**
  * Class ServiceProvider
  * @version 1.0
- * @package Pits\IS24API
+ * @package LubeyAG\IS24API
  */
 class ServiceProvider extends LaravelServiceProvider
 {

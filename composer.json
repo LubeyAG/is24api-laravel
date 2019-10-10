@@ -1,5 +1,5 @@
 {
-  "name": "pits/is24api-laravel",
+  "name": "lubeyag/is24api-laravel",
   "description": "immobilienscout24 api support for laravel 5",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -19,16 +19,16 @@
   },
   "autoload": {
 	"psr-4": {
-	  "Pits\\IS24API\\": "src/"
+	  "LubeyAG\\IS24API\\": "src/"
 	}
   },
   "extra": {
       "laravel": {
           "providers": [
-              "Pits\\IS24API\\ServiceProvider"
+              "LubeyAG\\IS24API\\ServiceProvider"
           ],
           "aliases": {
-              "IS24API": "Pits\\IS24API\\Facades\\IS24API"
+              "IS24API": "LubeyAG\\IS24API\\Facades\\IS24API"
           }
       }
   }

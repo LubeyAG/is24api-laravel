@@ -1,5 +1,5 @@
 <?php
-namespace Pits\IS24API\Facades;
+namespace LubeyAG\IS24API\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

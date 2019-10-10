@@ -1,6 +1,6 @@
 <?php
 
-namespace Pits\IS24API;
+namespace LubeyAG\IS24API;
 
 use Config;
 
